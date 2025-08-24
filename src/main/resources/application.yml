@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: agentic-ai-with-embabel
+  profiles:
+    active: shell
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+
+embabel:
+  models:
+    defaultLlm: gpt-4.1-mini     # or another available model
+  agent-platform:
+    ranking:
+      llm: gpt-4.1   # ensure this exists in available models
+
+# (Optional) OpenAI client or MCP configurations here...
